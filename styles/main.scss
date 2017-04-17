@@ -1,0 +1,91 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #EFEFEF;
+  margin: 0;
+  color: #212121;
+}
+
+.container {
+  margin: 30px auto 0;
+}
+
+.listview, .detailview {
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 50%;
+  padding: 30px;
+}
+
+.listview__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.listview__list-item {
+  padding: 5px 0;
+  width: 20%;
+  height: 20%;
+}
+
+.listview__link,
+.detailview__holiday,
+.detailview__back-button {
+  color: #FF5252;
+  text-decoration: none;
+}
+
+.detailview {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.detailview__header {
+  align-self: flex-end;
+  color: #ACACAC;
+  order: 2;
+}
+
+.detailview__holiday {
+  margin:15px 0;
+  order: 3;
+}
+
+.detailview__back-button {
+  align-self: flex-start;
+  order: 1;
+
+  &:before {
+    content: '⟵';
+    margin-right: 10px;
+  }
+}
+
+.picker {
+  overflow: hidden;
+  border-top: 1px solid #ACACAC;
+}
+
+.picker__header {
+  margin: 0 0 30px 0;
+  padding-top: 20px;
+  float: left;
+  color: #767676;
+}
+
+.picker__header__select {
+  float: left;
+  display: block;
+  background: transparent;
+  border: none;
+  font-size: 2em;
+  color: #FF5252;
+  padding: 0 5px;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
